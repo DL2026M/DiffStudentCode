@@ -1,9 +1,10 @@
-Name: YOUR NAME HERE
+Name: David Lutch
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date         |       Time        |                                                                                                                                                                                                                                                                                                                                                     Update |
+|:-------------|:-----------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| February 3rd | 11:25am - 11:55am | The problem set was introduced to me during this time. I noticed that there is some similarities between this problem set and DNA, which found the largest pattern of repeating sequences. In addition, I fully understand what the problem set is asking (sometimes it takes me a bit to understand the problem). |
+| February 4th |  6:15pm - 6:45pm  | I think that a way to approach this problem would be check the next letters only by the length of the current longest pattern. If the longest current pattern is 4 letters, then you can check 5 letters from the current index and if that is in the pattern, check the previous patterns. If this isn't in the pattern, then move the index over by one. |
+| February 4th |  7:35pm - 8:05pm  | During this time I thought more about how to solve this problem efficiently. I first wrote out an example problem on a whiteboard to see if I would notice any patterns. I then tried to see if those patterns applied to another example, but unfortunately nothing stood out on my 2 examples. |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.
