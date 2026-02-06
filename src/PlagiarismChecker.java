@@ -14,17 +14,24 @@ public class PlagiarismChecker {
      * @param doc2 the second
      * @return The length of the longest shared substring.
      */
+    // Tabulation
     public static int longestSharedSubstring(String doc1, String doc2) {
+        final int DOC1_LENGTH = doc1.length();
+        final int DOC2_LENGTH = doc2.length();
+        int[][] tabulation = new int[DOC1_LENGTH + 1][DOC2_LENGTH + 1];
 
-        // TODO Complete this function to return the length of the longest shared substring.
-        int longestString = 0;
-        // Base cases
-        if (doc1 == null || doc2 == null || doc1.isEmpty() || doc2.isEmpty()) {
-            return longestString;
+        for (int i = 1; i <= DOC1_LENGTH; i++) {
+            for (int j = 1; j <= DOC2_LENGTH; j++) {
+                // Checks to see if the last letter on each string is the same
+                if (doc1.charAt(i - 1) == doc2.charAt(j - 1)) {
+                    tabulation[i][j] = tabulation[i - 1][j - 1] + 1;
+                }
+                else {
+                    tabulation[i][j] = Math.max(tabulation[i - 1][j], tabulation[i][j - 1]);
+                }
+            }
         }
-        while (doc1.length() > 0 && doc2.length() > 0) {
-
-        }
-        return longestString;
+        return tabulation[DOC1_LENGTH][DOC2_LENGTH];
     }
+
 }
